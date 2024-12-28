@@ -18,4 +18,4 @@ const StoreContextProvider = (props) =>{
 
 }
 
-export default StoreContextProvider;
+export default StoreContextProvider; 
