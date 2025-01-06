@@ -5,6 +5,7 @@ import ExploreMenu from '../../componments/ExploreMenu/ExploreMenu'
 import FoodDisplay from '../../componments/FoodDisplay/FoodDisplay'
 
 import {useState} from 'react'
+import AppDownload from '../../componments/AppDownload/AppDownload'
 const Home = () => {
 
   const[category,setCategory]=useState("All");
@@ -14,6 +15,7 @@ const Home = () => {
       <Header/>
       <ExploreMenu category={category} setCategory={setCategory}/>
       <FoodDisplay category={category}/>
+      <AppDownload/>
     </div>
   )
 }
