@@ -1,0 +1,224 @@
+/* General Background and Text Colors */
+body {
+    background-color: #1C1C1C; /* Dark background for sophistication */
+    color: #f1f1f1; /* Light text for readability */
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.cart {
+    margin-top: 100px;
+}
+
+/* Cart Items Title */
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: #D4AF37; /* Gold color for high-end feel */
+    font-size: max(1vw, 12px);
+}
+
+/* Cart Items */
+.cart-items-item {
+    margin: 10px 0px;
+    color: #D4AF37; /* Luxurious gold for cart items */
+}
+
+.cart-items-item img {
+    width: 50px;
+}
+
+/* Cart Section Divider */
+.cart hr {
+    height: 1px;
+    background-color: #A9A9A9; /* Light gray for a subtle divider */
+    border: none;
+}
+
+/* Cart Remove Item Button */
+.cart-items-item .cross {
+    cursor: pointer;
+    color: #D4AF37; /* Gold color for remove item */
+}
+
+/* Cart Bottom Styling */
+.cart-bottom {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw, 20px);
+}
+
+/* Cart Total */
+.cart-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Cart Total Details */
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    color: #E2E2E2; /* Light gray for details */
+}
+
+/* Cart Total Button */
+.cart-total button {
+    border: none;
+    color: white;
+    background-color: #8B0000; /* Deep red for a rich button color */
+    width: max(15vw, 200px);
+    padding: 12px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-total button:hover {
+    background-color: #B22222; /* Lighter red for hover effect */
+}
+
+/* Promo Code Section */
+.cart-promocode {
+    flex: 1;
+}
+
+.cart-promocode p {
+    color: #E2E2E2; /* Light gray for the promo code text */
+}
+
+.cart-promocode-input {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333; /* Dark background for promo input */
+    border-radius: 4px;
+}
+
+.cart-promocode-input input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    color: #D4AF37; /* Gold text for input field */
+}
+
+.cart-promocode-input button {
+    width: max(10vw, 150px);
+    padding: 12px 5px;
+    background-color: #D4AF37; /* Gold button for promo code */
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.cart-promocode-input button:hover {
+    background-color: #B78A1A; /* Slightly darker gold on hover */
+}
+
+@media (max-width: 750px) {
+    .cart-bottom {
+        flex-direction: column-reverse;
+    }
+    .cart-promocode {
+        justify-content: start;
+    }
+}
+
+/* Luxury Food Item Design */
+.food-item {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px #000000; /* Deeper shadow for luxury */
+    transition: 0.3s;
+    animation: fadeIn 1s;
+    background-color: #2C2C2C; /* Dark gray for the food item */
+}
+
+.food-item-image {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.food-item-info {
+    padding: 20px;
+    background-color: #1C1C1C; /* Dark background for a premium feel */
+    border-radius: 0px 0px 15px 15px;
+}
+
+.food-item-name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.food-item-name-rating p {
+    font-size: 22px;
+    font-weight: 600;
+    color: #D4AF37; /* Gold text for food name and ratings */
+}
+
+.food-item-name-rating img {
+    width: 70px;
+}
+
+.food-item-desc {
+    color: #D4AF37; /* Gold for item descriptions */
+    font-size: 14px;
+}
+
+.food-item-price {
+    color: #8B0000; /* Deep red for price */
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.food-item-img-container {
+    position: relative;
+}
+
+.food-item-img-container .add {
+    width: 35px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #D4AF37; /* Luxurious gold background for add button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.food-item-img-container .add:hover {
+    background-color: #8B0000; /* Dark red hover effect */
+}
+
+.food-item-counter {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: #333333; /* Darker counter background */
+}
+
+.food-item-counter img {
+    width: 30px;
+}
+
+.food-item-counter p {
+    font-size: 18px;
+    color: #D4AF37; /* Gold for counter text */
+}
