@@ -1,0 +1,130 @@
+
+.navbar {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#1C1C1C; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar .logo {
+    width: 200px;
+   
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: #D4AF37; 
+    font-size: 24px;
+    font-family: 'Georgia', serif; 
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar button {
+    background: transparent;
+    font-size: 16px;
+    color: #D4AF37;
+    border: 2px solid #D4AF37; 
+    padding: 12px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Helvetica', sans-serif; 
+}
+
+.navbar button:hover {
+    background-color: #D4AF37; 
+    color: white;
+}
+
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #D4AF37; 
+}
+
+.navbar li {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.navbar-search-icon {
+    position: relative;
+}
+
+.navbar-search-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: #8B0000; 
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+
+
+@media (max-width: 1050px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+    .navbar-menu {
+        gap: 25px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 35px;
+    }
+
+    .navbar-right img {
+        width: 25px;
+    }
+
+    .navbar-right button {
+        padding: 10px 25px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .navbar .logo {
+        width: 120px;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 25px;
+    }
+
+    .navbar-right img {
+        width: 22px;
+    }
+
+    .navbar-right button {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .navbar-menu {
+        .navbar-menu {
+            gap: 1px;
+            font-size: 8px;
+        }
+    }
+}
