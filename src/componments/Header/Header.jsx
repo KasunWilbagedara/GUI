@@ -6,11 +6,12 @@ const Header = () => {
         <div className="header-content">
             <h2>Order your favourite food here</h2>
             <p>choose your diverse menu featuring......</p>
-            <button>View Menu</button>
+            
+            <a href='#explore-menu'><button>View Menu</button></a>
         </div>
       
     </div>
-  )
+  ) 
 }
 
 export default Header
