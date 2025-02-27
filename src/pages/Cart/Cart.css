@@ -1,6 +1,9 @@
 
 body {
-    background-color: #1C1C1C; 
+    background-image: url('D:\Projects\GUI projct\food management system\src\assets/background2.jpg'); 
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: repeat; 
     color: #f1f1f1; 
     font-family: 'Helvetica', Arial, sans-serif;
 }
