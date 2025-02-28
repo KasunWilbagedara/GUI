@@ -41,12 +41,14 @@ const PlaceOrder = () => {
         body: JSON.stringify(orderData),
       });
 
-      const result = await response.json();
       if (!response.ok) {
-        throw new Error(result.message || 'Something went wrong');
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Something went wrong');
       }
 
+      const result = await response.json();
       alert(result.message); // Show success message
+
       // Optionally, reset the form or redirect the user
       setOrderData({
         firstName: '',
