@@ -7,6 +7,7 @@ import PlaceOrder from './pages/Place order/PlaceOrder';
 import Footer from './componments/Footer/Footer';
 import LoginPopup from './componments/LoginPopup/LoginPopup';
 import BookTable from './pages/BookTable/BookTable'; // Import the new BookTable component
+import OurStory from './pages/OurStory/OurStory';
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -30,7 +31,8 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/order' element={<PlaceOrder />} />
-          <Route path='/book-table' element={<BookTable />} /> {/* Add the new route */}
+          <Route path='/book-table' element={<BookTable />} />
+          <Route path='/our-story' element={<OurStory />} />
         </Routes>
       </div>
       <Footer />

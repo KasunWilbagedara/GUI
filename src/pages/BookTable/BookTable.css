@@ -1,58 +1,60 @@
 .book-table-container {
     text-align: center;
     padding: 50px 20px;
-    background-image: url('D:\Projects\GUI projct\food management system\src\assets/background2.jpg'); 
-    background-size: contain; 
-    background-position: center; 
-    background-repeat: repeat; 
-    color: #f1f1f1; 
-    color: #333;
+    background-image: url('src/assets/background2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f1f1f1;
     border-radius: 10px;
-    margin: 20px;
+    
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.book-table-container h2 {
-    font-size: 2.5em;
+.title {
+    font-size: 4rem;
     margin-bottom: 20px;
-    color: #fff;
+    color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto', sans-serif;
 }
 
-.book-table-container p {
-    font-size: 1.2em;
-    margin: 10px 0;
+.sub-title {
+    font-size: 1.5em;
     color: white;
+    margin: 10px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    font-family: 'Times New Roman', serif;
 }
 
 .contact-info {
     margin: 30px 0;
-  
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 .contact-info h3 {
     font-size: 1.8em;
     margin-bottom: 10px;
     color: #eae2e2;
+    font-family: 'Roboto', sans-serif;
 }
 
 .contact-info a {
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
+    
 }
 
 .contact-info a:hover {
     text-decoration: underline;
 }
 
-
 .map-container {
     margin: 30px 0;
-    
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -62,6 +64,7 @@
     font-size: 1.8em;
     margin-bottom: 15px;
     color: #ffffff;
+    font-family: 'Roboto', sans-serif;
 }
 
 .map-container iframe {
@@ -73,7 +76,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-   
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);

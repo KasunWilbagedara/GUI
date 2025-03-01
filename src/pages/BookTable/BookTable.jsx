@@ -1,20 +1,57 @@
 import React from 'react';
 import './BookTable.css';
+import { motion } from 'framer-motion';
 
 const BookTable = () => {
   return (
-    <div className="book-table-container">
-      <h2>BOOK A TABLE</h2>
-      <p>Reserve your spot at our restaurant</p>
-      <p>Need to book a table for a special occasion or a group event?</p>
-      <p>Hit us up! Our team is here to help you plan your next gathering.</p>
+    <motion.div 
+      className="book-table-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <motion.h2 
+        className="title" 
+        initial={{ y: -100, opacity: 0 }} 
+        animate={{ y: 0, opacity: 1 }} 
+        transition={{ duration: 2, delay: 0.3 }}
+      >
+        BOOK A TABLE
+      </motion.h2>
+
+      <motion.p 
+        className="sub-title"
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 2, delay: 0.5 }}
+      >
+        Reserve your spot at our restaurant
+      </motion.p>
+
+      <motion.p 
+        className="sub-title"
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 2, delay: 0.7 }}
+      >
+        Need to book a table for a special occasion or a group event?
+      </motion.p>
+
+      <motion.p 
+        className="sub-title"
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 2, delay: 0.9 }}
+      >
+        Hit us up! Our team is here to help you plan your next gathering.
+      </motion.p>
 
       <div className="contact-info">
-        <h3>GOLDEN RESTURANT</h3>
+        <h3>GOLDEN RESTAURANT</h3>
         <p>Email: <a href="mailto:info@w15.lk">HACKCHECK@gmail</a></p>
       </div>
 
-      {/* Map Section */}
+      
       <div className="map-container">
         <h3>Find Us</h3>
         <iframe
@@ -29,15 +66,40 @@ const BookTable = () => {
       </div>
 
       <form className="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <input type="date" placeholder="Date" required />
-        <input type="time" placeholder="Time" required />
-        <input type="number" placeholder="Number of Guests" required />
-        <textarea placeholder="Special Requests" required></textarea>
-        <button type="submit">SUBMIT</button>
+        <input
+          type="text"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Your Email"
+          required
+        />
+        <input
+          type="date"
+          placeholder="Date"
+          required
+        />
+        <input
+          type="time"
+          placeholder="Time"
+          required
+        />
+        <input
+          type="number"
+          placeholder="Number of Guests"
+          required
+        />
+        <textarea
+          placeholder="Special Requests"
+          required
+        ></textarea>
+        <button type="submit">
+          SUBMIT
+        </button>
       </form>
-    </div>
+    </motion.div>
   );
 };
 
