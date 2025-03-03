@@ -3,23 +3,29 @@
     flex-direction: column;
     gap: 30px; 
     padding: 50px 10vw;
+    margin-top: 30px;
+    
+  
     
 }
 
 .explore-menu h1 {
     color: #D4AF37; 
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+  
 }
 
 .explore-menu-text {
     max-width: 70%;
     color: #A9A9A9;
-    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem; 
+  text-transform: uppercase;
     margin: 0 auto;
     text-align: center;
 }
@@ -62,9 +68,12 @@
 .explore-menu-list-item p {
     margin-top: 15px;
     color: #F5F5F5;
-    font-size: 1.2rem;
+    
     cursor: pointer;
     transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem; 
+  text-transform: uppercase;
 }
 
 .explore-menu-list-item:hover {

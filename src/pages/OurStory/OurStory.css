@@ -1,132 +1,93 @@
 .our-story-container {
-    font-family: "serif";
-    color: #fff;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
-    
-    text-align: center;
-    padding-bottom: 50px;
-    margin: 0; 
-    padding: 0; 
-    width: 100%; 
-    overflow: hidden; 
-  }
+  width: 100%;
+  background-color: #b4f0e4;
+  color: #2d5d4f;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 50px 0;
+  background-image: url("/D:\Projects\GUI projct\food management system\src\assets/story.jpg"); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 60vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  font-family: 'Montserrat', sans-serif;
+}
+
+.full-size-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.story-flex-container,
+.founder-flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.story-image,
+.founder-image {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.story-text,
+.founder-text {
+  width: 50%;
+  padding: 0 20px;
   
-  .hero-section {
-    background-image: url("/D:\Projects\GUI projct\food management system\src\assets/story.jpg");
-    background-size: contain; 
-    background-position: center; 
-    height: 60vh;
-    display: flex;
+}
+
+.story-text h2,
+.founder-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.story-text p,
+.founder-text p {
+  font-family: 'Montserrat', sans-serif;
+  font-size :0.6rem; ;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .story-flex-container,
+  .founder-flex-container {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 0; 
-    padding: 0; 
-    width: 100%; 
   }
-  
-  .hero-title {
-    font-size: 5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .content-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    padding: 50px 0; 
-    max-width: 1200px;
-    margin: auto;
-    width: 100%; 
-  }
-  
-  .story-background {
-    background: url("/path-to-story-background.jpg") center/cover no-repeat;
-    margin: 0; 
-    padding: 0; 
-    width: 100%; 
-  }
-  
-  .full-size-section {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0; 
-    padding: 0; 
-  }
-  
-  .story-image {
-    width: 40%;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
-  }
-  
-  .story-text {
-    width: 50%;
-    text-align: left;
-    
-  }
-  
-  .story-text h2 {
-    font-size:4rem;
-    margin-bottom: 20px;
-    color: #f4c842;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .story-text p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    font-family: 'Times New Roman', serif;
-  }
-  
-  .founder-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    padding: 50px 0;
-    max-width: 1200px;
-    margin: auto;
-    flex-direction: row;
-    width: 100%; 
-  }
-  
-  .founder-background {
-    background: black;
-    margin: 0; 
-    padding: 0; 
-    width: 100%; 
-  }
-  
+
+  .story-image,
   .founder-image {
-    width: 40%;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
-  }
-  
-  .founder-text {
-    width: 50%;
-    text-align: left;
-    
-    
-  }
-  
-  .founder-text h2 {
-    font-size: 4rem;
+    width: 100%;
     margin-bottom: 20px;
-    color: #f4c842;
-    font-family: 'Roboto', sans-serif;
   }
-  
-  .founder-text p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    font-family: 'Times New Roman', serif;
+
+  .story-text,
+  .founder-text {
+    width: 100%;
+    padding: 0;
   }
+}

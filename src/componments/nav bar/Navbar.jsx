@@ -15,13 +15,15 @@ const Navbar = ({ setShowLogin }) => {
       </Link>
       <ul className="navbar-menu">
         <Link to='/' onClick={() => setMenu("Home")} className={menu === "Home" ? "active" : ""}>Home</Link>
-        <a href='#explore-menu' onClick={() => setMenu("Menu")} className={menu === "Menu" ? "active" : ""}>Menu</a>
+        <Link to='/details' onClick={() => setMenu("Menu")} className={menu === "Menu" ? "active" : ""}>Menu</Link>
         <a href='#app-download' onClick={() => setMenu("Mobile-App")} className={menu === "Mobile-App" ? "active" : ""}>Mobile-App</a>
         <a href='#footer' onClick={() => setMenu("Contact-Us")} className={menu === "Contact-Us" ? "active" : ""}>Contact Us</a>
-        <Link to='/book-table' onClick={() => setMenu("Book-Table")} className={menu === "Book-Table" ? "active" : ""}>Book Table</Link>
         <Link to='/our-story' onClick={() => setMenu("Our-Story")} className={menu === "Our-Story" ? "active" : ""}>OurStory</Link>
-
+        <Link to='/book-table' onClick={() => setMenu("Book-Table")} className={menu === "Book-Table" ? "active" : ""}>Reservations</Link>
+       
+        
       </ul>
+
       <div className="navbar-right">
         <img src={assets.search_icon} alt="" />
         <div className="navbar-search-icon">
