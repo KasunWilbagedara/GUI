@@ -6,17 +6,29 @@
     margin-top :100px;
     margin-left: 40px;
     margin-right: 40px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .place-order-left{
     width: 100%;
     max-width: max(30%,500px);
+   
 }
 
+
+
 .place-order-left .title{
+    position: relative;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 30px;
     font-weight: 600;
-    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    text-transform:uppercase;
+    
 }
 
 .place-order-left input{
@@ -35,8 +47,16 @@
 .place-order-right{
     width: 100%;
     max-width: max(40%,500px);
+    font-family: 'Montserrat', sans-serif;
+    text-transform:uppercase;
+}
+.place-order-right.cart-total{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-transform:uppercase;
 }
 
 .place-order .cart-total button{
     margin-top:30px;
+    font-family: 'Montserrat', sans-serif;
 }

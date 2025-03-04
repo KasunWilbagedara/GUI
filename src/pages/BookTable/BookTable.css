@@ -2,11 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:rgb(251, 243, 235);
+  background-color: rgb(251, 243, 235);
   color: #323232;
-  
 }
-
 
 .image-top-container {
   width: 100%;
@@ -21,7 +19,6 @@
   max-height: 400px;
   object-fit: cover;
 }
-
 
 .title {
   position: absolute;
@@ -46,7 +43,6 @@
 .form-container {
   width: 50%;
   margin-top: 40px;
-  
 }
 
 .contact-form input,
@@ -61,7 +57,7 @@
 }
 
 .contact-form button {
-  background-color: #1E4B78 ;
+  background-color: #1E4B78;
   color: white;
   cursor: pointer;
 }
@@ -90,7 +86,6 @@
   width: 100%;
   padding: 2rem 0;
   background-color: #eaeaea;
-  
 }
 
 .map-container iframe {
@@ -102,6 +97,17 @@
   color: #333;
 }
 
+.success-message {
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}
 
 @media (max-width: 768px) {
   .content-wrapper {
@@ -128,7 +134,6 @@
     width: 100%;
   }
 
-  
   .title {
     font-size: 2rem;
   }

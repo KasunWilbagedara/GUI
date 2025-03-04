@@ -1,9 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 import "./BookTable.css";
 import { motion } from "framer-motion";
 import TableImage from "../../assets/Book.jpg"; 
 
 const BookTable = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    date: '',
+    time: '',
+    guests: '',
+    specialRequests: ''
+  });
+  
+  const [submitStatus, setSubmitStatus] = useState(null);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    try {
+      const response = await fetch('http://localhost:5174/api/reservations', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        setSubmitStatus('success');
+        
+        setFormData({
+          name: '',
+          email: '',
+          date: '',
+          time: '',
+          guests: '',
+          specialRequests: ''
+        });
+        console.log('Reservation successful:', result);
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      console.error('Error submitting reservation:', error);
+    }
+  };
+
   return (
     <motion.div 
       className="book-table-container"
@@ -11,7 +63,6 @@ const BookTable = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      
       <motion.div 
         className="image-top-container"
         initial={{ opacity: 0 }}
@@ -34,7 +85,6 @@ const BookTable = () => {
       </motion.div>
 
       <div className="content-wrapper">
-        
         <motion.div 
           className="form-container"
           initial={{ x: -100, opacity: 0 }}
@@ -42,15 +92,56 @@ const BookTable = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
           viewport={{ once: true }}
         >
-          <form className="contact-form">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <input type="date" required />
-            <input type="time" required />
-            <input type="number" placeholder="Number of Guests" required />
-            <textarea placeholder="Special Requests" required></textarea>
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <input 
+              type="text" 
+              name="name"
+              placeholder="Your Name" 
+              value={formData.name}
+              onChange={handleChange}
+              required 
+            />
+            <input 
+              type="email" 
+              name="email"
+              placeholder="Your Email" 
+              value={formData.email}
+              onChange={handleChange}
+              required 
+            />
+            <input 
+              type="date" 
+              name="date"
+              value={formData.date}
+              onChange={handleChange}
+              required 
+            />
+            <input 
+              type="time" 
+              name="time"
+              value={formData.time}
+              onChange={handleChange}
+              required 
+            />
+            <input 
+              type="number" 
+              name="guests"
+              placeholder="Number of Guests" 
+              value={formData.guests}
+              onChange={handleChange}
+              required 
+            />
+            <textarea 
+              name="specialRequests"
+              placeholder="Special Requests" 
+              value={formData.specialRequests}
+              onChange={handleChange}
+              required
+            ></textarea>
             <button type="submit">SUBMIT</button>
           </form>
+          {submitStatus === 'success' && <p className="success-message">Reservation submitted successfully!</p>}
+          {submitStatus === 'error' && <p className="error-message">Error submitting reservation. Please try again.</p>}
         </motion.div>
 
         <div className="right-container">

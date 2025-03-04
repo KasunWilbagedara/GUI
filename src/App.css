@@ -1,0 +1,8 @@
+.app {
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .app.blurred {
+    filter: blur(5px);
+    pointer-events: none; 
+  }
