@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f5f5f5;
-  color: #333;
+  background-color:rgb(251, 243, 235);
+  color: #323232;
+  
 }
 
 
@@ -44,6 +45,8 @@
 
 .form-container {
   width: 50%;
+  margin-top: 40px;
+  
 }
 
 .contact-form input,
@@ -54,10 +57,11 @@
   padding: 1rem;
   border-radius: 8px;
   border: 1px solid #ddd;
+  background-color: #FAEBE1;
 }
 
 .contact-form button {
-  background-color: #333;
+  background-color: #1E4B78 ;
   color: white;
   cursor: pointer;
 }
@@ -75,6 +79,7 @@
 
 .map-container {
   width: 100%;
+  margin-top: 40px;
 }
 
 .info-container {
@@ -85,6 +90,7 @@
   width: 100%;
   padding: 2rem 0;
   background-color: #eaeaea;
+  
 }
 
 .map-container iframe {
