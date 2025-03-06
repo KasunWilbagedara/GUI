@@ -10,7 +10,10 @@
     top:0;
     z-index: 1000;
     height: 19vh;
-    color:Soft Gold;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    
 }
 
 .navbar .logo {
@@ -21,20 +24,20 @@
     display: flex;
     list-style: none;
     gap: 30px;
-    color: #D4AF37; 
-    font-size: 24px;
+    color: #F5E1C8; 
+    font-size: 1.3rem;
     font-family: 'Montserrat', sans-serif;
 }
 
 .navbar-menu a, .navbar-menu Link {
     text-decoration: none;
-    color: #D4AF37;
+    color: #F5E1C8; 
     font-weight: 600;
 }
 
 .navbar-menu .active {
     padding-bottom: 2px;
-    border-bottom: 2px solid #D4AF37; 
+    border-bottom: 2px solid #F5E1C8; 
 }
 
 .navbar-right {
@@ -51,8 +54,8 @@
 .navbar button {
     background: transparent;
     font-size: 16px;
-    color: #D4AF37;
-    border: 2px solid #D4AF37; 
+    color: #F5E1C8;
+    border: 2px solid #D4A373; 
     padding: 12px 30px;
     border-radius: 50px;
     cursor: pointer;
@@ -61,8 +64,8 @@
 }
 
 .navbar button:hover {
-    background-color: #D4AF37; 
-    color: white;
+    background-color: #D4A373; 
+    color: #F5E1C8;
 }
 
 .navbar-search-icon {
@@ -73,7 +76,7 @@
     position: absolute;
     min-width: 10px;
     min-height: 10px;
-    background-color: #8B0000; 
+    background-color: #F5E1C8; 
     border-radius: 5px;
     top: -8px;
     right: -8px;

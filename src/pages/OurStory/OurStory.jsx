@@ -19,11 +19,18 @@ const OurStory = () => {
       
       <motion.div
         className="hero-section"
-        initial={{ opacity: 0, y: -50 }}
-        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
-        transition={{ duration: 1, ease: "easeOut" }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
-        <h1 className="hero-title">Our Story</h1>
+        <motion.h1 
+          className="hero-title"
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.3 }}
+        >
+          Our Story
+        </motion.h1>
       </motion.div>
 
       

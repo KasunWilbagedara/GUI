@@ -61,13 +61,13 @@ const BookTable = () => {
       className="book-table-container"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.8 }} 
     >
       <motion.div 
         className="image-top-container"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.8 }} 
       >
         <img 
           src={TableImage}  
@@ -76,9 +76,13 @@ const BookTable = () => {
         />
         <motion.h2 
           className="title"
-          initial={{ y: -100, opacity: 0 }}
+          initial={{ y: -100, opacity: 0 }} 
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, delay: 0.3 }}
+          transition={{ 
+            duration: 1, 
+            delay: 0.3,   
+            ease: "easeOut" 
+          }}
         >
           Reservations
         </motion.h2>
